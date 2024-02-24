@@ -12,7 +12,7 @@ from facesdk import getMachineCode
 from facesdk import setActivation
 from facesdk import faceDetection
 from facesdk import initSDK
-from facebox import FaceBox
+from face_util import FaceBox
 
 livenessThreshold = 0.7
 yawThreshold = 10

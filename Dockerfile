@@ -3,7 +3,7 @@ RUN mkdir -p /home/openvino/faceplugin-live
 WORKDIR /home/openvino/faceplugin-live
 COPY ./libfacesdk1.so .
 COPY ./facesdk.py .
-COPY ./facebox.py .
+COPY face_util.py .
 COPY ./app.py .
 COPY ./requirements.txt .
 COPY ./data ./data

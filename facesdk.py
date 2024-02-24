@@ -2,7 +2,7 @@ import os
 
 from ctypes import *
 from numpy.ctypeslib import ndpointer
-from facebox import FaceBox
+from face_util import FaceBox
 
 libPath = os.path.abspath(os.path.dirname(__file__)) + '/libfacesdk1.so'
 facesdk = cdll.LoadLibrary(libPath)
