@@ -11,10 +11,32 @@
 </div>
 
 <details open>
+<summary><h2>Installation</h2></summary>
+
+- build docker image
+```bash
+sudo docker build --pull --rm -f Dockerfile -t faceplugin-face-liveness:latest .
+```
+
+- run docker image
+```bash
+sudo docker run -v ./license.txt:/home/openvino/faceplugin-live/license.txt -p 8081:8080 faceplugin-face-liveness
+```
+
+</details>
+
+<details open>
 <summary><h2>Table of Contents</h2></summary>
 
 * **[Face Detection](#face-detection)**
 * **[Face Landmark Extraction](#face-landmark-extraction)**
 * **[Face Liveness Detection](#face-expression-detection)**
 
+</details>
+
+<details open>
+<summary><h2>Run Demo</h2></summary>
+Please use following url or your public ip address via internet
+
+  http://127.0.0.1:8081 or http://46.54.233.100:8081
 </details>
