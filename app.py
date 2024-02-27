@@ -49,9 +49,21 @@ print("activation: ", ret)
 ret = initSDK("data".encode('utf-8'))
 print("init: ", ret)
 
-app = Flask(__name__) 
+app = Flask(__name__)
 
-@app.route('/check_liveness', methods=['POST'])
+
+@app.route('/get-machine-code', methods=['GET'])
+def get_machine_code():
+    machine_code = getMachineCode()
+
+    response = jsonify({"machineCode": machine_code})
+
+    response.status_code = 200
+    response.headers["Content-Type"] = "application/json; charset=utf-8"
+    return response
+
+
+@app.route('/liveness-detection', methods=['POST'])
 def check_liveness():
     faces = []
     isNotFront = None
@@ -159,7 +171,8 @@ def check_liveness():
     response.headers["Content-Type"] = "application/json; charset=utf-8"
     return response
 
-@app.route('/check_liveness_base64', methods=['POST'])
+
+@app.route('/liveness-detection-base64', methods=['POST'])
 def check_liveness_base64():
     faces = []
     isNotFront = None
