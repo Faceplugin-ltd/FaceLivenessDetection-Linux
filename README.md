@@ -10,8 +10,7 @@
 <img src="https://img.shields.io/github/issues-pr/genderev/assassin" alt="pr"/>
 </div>
 
-<details open>
-<summary><h2>Installation</h2></summary>
+<h2>Installation</h2>
 
 - build docker image
 ```bash
@@ -23,20 +22,19 @@ sudo docker build --pull --rm -f Dockerfile -t faceplugin-face-liveness:latest .
 sudo docker run -v ./license.txt:/home/openvino/faceplugin-live/license.txt -p 8081:8080 faceplugin-face-liveness
 ```
 
-</details>
+<h2>List of our Products</h2>
 
-<details open>
-<summary><h2>Table of Contents</h2></summary>
+* **[FaceRecognition-LivenessDetection-Android](https://github.com/Faceplugin-ltd/FaceRecognition-LivenessDetection-Android)**
+* **[FaceRecognition-LivenessDetection-iOS](https://github.com/Faceplugin-ltd/FaceRecognition-LivenessDetection-iOS)**
+* **[FaceRecognition-LivenessDetection-Javascript](https://github.com/Faceplugin-ltd/FaceRecognition-LivenessDetection-Javascript)**
+* **[FaceLivenessDetection-Docker](https://github.com/Faceplugin-ltd/FaceLivenessDetection-Docker)**
+* **[FaceRecognition-Python](https://github.com/Faceplugin-ltd/FaceRecognition-Python)**
+* **[FaceRecognition-LivenessDetection-React](https://github.com/Faceplugin-ltd/FaceRecognition-LivenessDetection-React)**
+* **[FaceRecognition-LivenessDetection-Vue](https://github.com/Faceplugin-ltd/FaceRecognition-LivenessDetection-Vue)**
 
-* **[Face Detection](#face-detection)**
-* **[Face Landmark Extraction](#face-landmark-extraction)**
-* **[Face Liveness Detection](#face-expression-detection)**
 
-</details>
-
-<details open>
-<summary><h2>Run Demo</h2></summary>
+<h2>Run Demo</h2>
 Please use following url or your public ip address via internet
 
-  http://127.0.0.1:8081 or http://46.54.233.100:8081
-</details>
+http://127.0.0.1:8081 or http://46.54.233.100:8081
+
