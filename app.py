@@ -43,12 +43,6 @@ except IOError as exc:
     print("failed to open license.txt: ", exc.errno)
 print("license: ", license)
 
-ret = setActivation(license.encode('utf-8'))
-print("activation: ", ret)
-
-ret = initSDK("data".encode('utf-8'))
-print("init: ", ret)
-
 app = Flask(__name__)
 
 
@@ -57,6 +51,26 @@ def get_machine_code():
     machine_code = getMachineCode()
 
     response = jsonify({"machineCode": machine_code})
+
+    response.status_code = 200
+    response.headers["Content-Type"] = "application/json; charset=utf-8"
+    return response
+
+
+@app.route('/activate-machine', methods=['POST'])
+def activate_machine():
+    content = request.get_json()
+    license = content['license']
+
+    ret = setActivation(license.encode('utf-8'))
+    activate_state = ret
+    print("activation: ", ret)
+
+    ret = initSDK("data".encode('utf-8'))
+    init_state = ret
+    print("init: ", ret)
+
+    response = jsonify({"activationStatus": activate_state}, {'initStatus': init_state})
 
     response.status_code = 200
     response.headers["Content-Type"] = "application/json; charset=utf-8"
