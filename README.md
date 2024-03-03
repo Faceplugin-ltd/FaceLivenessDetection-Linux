@@ -14,12 +14,12 @@
 
 - build docker image
 ```bash
-sudo docker build --pull --rm -f Dockerfile -t faceplugin-face-liveness:latest .
+sudo docker build -t face-liveness --progress=plain .
 ```
 
 - run docker image
 ```bash
-sudo docker run -v ./license.txt:/home/openvino/faceplugin-live/license.txt -p 8081:8080 faceplugin-face-liveness
+sudo docker run --name faceplugin -d -p 0.0.0.0:8888:8888 face-liveness
 ```
 
 <h2>List of our Products</h2>
@@ -32,9 +32,28 @@ sudo docker run -v ./license.txt:/home/openvino/faceplugin-live/license.txt -p 8
 * **[FaceRecognition-LivenessDetection-React](https://github.com/Faceplugin-ltd/FaceRecognition-LivenessDetection-React)**
 * **[FaceRecognition-LivenessDetection-Vue](https://github.com/Faceplugin-ltd/FaceRecognition-LivenessDetection-Vue)**
 
+<h2>Documentation</h2>
+
+Here's the useful documentation.
+
+<a name="get-machine-code"></a>
+#### Get Machine Code
+<div align="left">
+<img src="https://github.com/Faceplugin-ltd/FaceLivenessDetection-Docker/assets/160750757/06cd2f3b-8d9d-4a35-bd01-e74a29ac24e9.png" alt="Awesome Badge"/>
+</div>
+
+#### Activate Machine
+<div align="left">
+<img src="https://github.com/Faceplugin-ltd/FaceLivenessDetection-Docker/assets/160750757/43c80f9f-e68c-4a52-bda3-1d42d70f4f4b.png" alt="Awesome Badge"/>
+</div>
+
+#### Liveness Detection using raw file
+<div align="left">
+<img src="https://github.com/Faceplugin-ltd/FaceLivenessDetection-Docker/assets/160750757/77f964f4-a0ed-41c3-878e-d7a039f0e3d2.png" alt="Awesome Badge"/>
+</div>
 
 <h2>Run Demo</h2>
 Please use following url or your public ip address via internet
 
-http://127.0.0.1:8081 or http://46.54.233.100:8081
+http://127.0.0.1:8081 or http://0.0.0.0:8888
 
