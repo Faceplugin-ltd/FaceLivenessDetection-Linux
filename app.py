@@ -30,19 +30,6 @@ luminanceLightThreshold = 200
 
 maxFaceCount = 10
 
-licensePath = "license.txt"
-license = ""
-
-machineCode = getMachineCode()
-print("machineCode: ", machineCode.decode('utf-8'))
-
-try:
-    with open(licensePath, 'r') as file:
-        license = file.read()
-except IOError as exc:
-    print("failed to open license.txt: ", exc.errno)
-print("license: ", license)
-
 app = Flask(__name__)
 
 
@@ -50,7 +37,7 @@ app = Flask(__name__)
 def get_machine_code():
     machine_code = getMachineCode()
 
-    response = jsonify({"machineCode": machine_code})
+    response = jsonify({"machineCode": machine_code.decode("utf-8")})
 
     response.status_code = 200
     response.headers["Content-Type"] = "application/json; charset=utf-8"
@@ -298,5 +285,5 @@ def check_liveness_base64():
 
 
 if __name__ == '__main__':
-    port = int(os.environ.get("PORT", 8080))
+    port = int(os.environ.get("PORT", 8888))
     app.run(host='0.0.0.0', port=port)
