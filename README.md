@@ -3,6 +3,8 @@
 </div>
 
 # FacePlugin-FaceLivenessDetection-Docker
+Empowering security, our **liveness detection** model excels in identifying and thwarting threats including **printed photos, video replay, 3D masks, and deepfake attempts,** ensuring robust and reliable authentication.
+
 <div align="left">
 <img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" alt="Awesome Badge"/>
 <img src="https://img.shields.io/static/v1?label=%F0%9F%8C%9F&message=If%20Useful&style=style=flat&color=BC4E99" alt="Star Badge"/>
@@ -27,6 +29,8 @@ sudo docker run --name faceplugin -d -p 0.0.0.0:8888:8888 face-liveness
 * **[FaceRecognition-LivenessDetection-Android](https://github.com/Faceplugin-ltd/FaceRecognition-LivenessDetection-Android)**
 * **[FaceRecognition-LivenessDetection-iOS](https://github.com/Faceplugin-ltd/FaceRecognition-LivenessDetection-iOS)**
 * **[FaceRecognition-LivenessDetection-Javascript](https://github.com/Faceplugin-ltd/FaceRecognition-LivenessDetection-Javascript)**
+* **[FaceLivenessDetection-Android](https://github.com/Faceplugin-ltd/FaceLivenessDetection-Android)**
+* **[FaceLivenessDetection-iOS](https://github.com/Faceplugin-ltd/FaceLivenessDetection-iOS)**
 * **[FaceLivenessDetection-Docker](https://github.com/Faceplugin-ltd/FaceLivenessDetection-Docker)**
 * **[FaceRecognition-Python](https://github.com/Faceplugin-ltd/FaceRecognition-Python)**
 * **[FaceRecognition-LivenessDetection-React](https://github.com/Faceplugin-ltd/FaceRecognition-LivenessDetection-React)**
@@ -55,5 +59,5 @@ Here's the useful documentation.
 <h2>Run Demo</h2>
 Please use following url or your public ip address via internet
 
-http://127.0.0.1:8081 or http://0.0.0.0:8888
+http://127.0.0.1:8888 or http://0.0.0.0:8888
 
