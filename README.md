@@ -33,6 +33,7 @@ Here's the useful documentation.
 <div align="left">
 <img src="https://github.com/Faceplugin-ltd/FaceLivenessDetection-Docker/assets/160750757/06cd2f3b-8d9d-4a35-bd01-e74a29ac24e9.png" alt="Awesome Badge"/>
 </div>
+<h4>Please share the machine code with us so that we can give you license.</h4>
 
 #### Activate Machine
 <div align="left">
