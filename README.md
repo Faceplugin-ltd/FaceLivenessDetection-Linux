@@ -2,7 +2,7 @@
 <img alt="" src="https://github.com/Faceplugin-ltd/FaceRecognition-Javascript/assets/160750757/657130a9-50f2-486d-b6d5-b78bcec5e6e2.png" width=200/>
 </div>
 
-#  FaceLivenessDetection-Docker
+#  Liveness Detection SDK Linux - Fully On-Premise
 Empowering security, our **iBeta level 2 liveness detection** model excels in identifying and thwarting threats including **printed photos, video replay, 3D masks, and deepfake attempts,** ensuring robust and reliable authentication.
 
 <div align="left">
