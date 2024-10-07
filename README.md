@@ -2,8 +2,11 @@
 <img alt="" src="https://github.com/Faceplugin-ltd/FaceRecognition-Javascript/assets/160750757/657130a9-50f2-486d-b6d5-b78bcec5e6e2.png" width=200/>
 </div>
 
-#  Liveness Detection SDK Linux - Fully On-Premise
-Empowering security, our **iBeta level 2 liveness detection** model excels in identifying and thwarting threats including **printed photos, video replay, 3D masks, and deepfake attempts,** ensuring robust and reliable authentication.
+#  Liveness Detection SDK Linux - Fully On-Premise - iBeta Level2 Compliant
+## Overview
+Explore our iBeta level 2 compliant `liveness detection linux SDK` that effectively safeguards against **printed photos, video replay, 3D masks, and deepfake threats**, ensuring top-tier security.
+<br>This is `on-premise SDK` which means everything is processed in your server and **NO** data leaves the device 
+<br></br>
 
 <div align="left">
 <img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" alt="Awesome Badge"/>
@@ -12,7 +15,7 @@ Empowering security, our **iBeta level 2 liveness detection** model excels in id
 <img src="https://img.shields.io/github/issues-pr/genderev/assassin" alt="pr"/>
 </div>
 
-<h2>Installation</h2>
+## Installation
 
 - build docker image
 ```bash
@@ -24,7 +27,7 @@ sudo docker build -t face-liveness --progress=plain .
 sudo docker run --name faceplugin -d -p 0.0.0.0:8888:8888 face-liveness
 ```
 
-<h2>Documentation</h2>
+## Documentation
 
 Here's the useful documentation.
 
@@ -45,12 +48,12 @@ Here's the useful documentation.
 <img src="https://github.com/Faceplugin-ltd/FaceLivenessDetection-Docker/assets/160750757/77f964f4-a0ed-41c3-878e-d7a039f0e3d2.png" alt="Awesome Badge"/>
 </div>
 
-<h2>Run Demo</h2>
+## Run Demo
 Please use following url or your public ip address via internet
 
 http://127.0.0.1:8888 or http://0.0.0.0:8888
 
-<h2>List of our Products</h2>
+## List of our Products
 
 * **[FaceRecognition-LivenessDetection-Android](https://github.com/Faceplugin-ltd/FaceRecognition-Android)**
 * **[FaceRecognition-LivenessDetection-iOS](https://github.com/Faceplugin-ltd/FaceRecognition-iOS)**
@@ -64,7 +67,7 @@ http://127.0.0.1:8888 or http://0.0.0.0:8888
 * **[Liveness Detection SDK](https://github.com/Faceplugin-ltd/Face-Liveness-Detection-SDK)**
 * **[ID Card Recognition](https://github.com/Faceplugin-ltd/ID-Card-Recognition)**
 
-<h2>Contact</h2>
+## Contact
 
 <div align="left">
 <a target="_blank" href="mailto:info@faceplugin.com"><img src="https://img.shields.io/badge/email-info@faceplugin.com-blue.svg?logo=gmail " alt="faceplugin.com"></a>&emsp;
