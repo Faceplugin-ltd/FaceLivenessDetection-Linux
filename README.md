@@ -2,7 +2,7 @@
 <img alt="" src="https://github.com/Faceplugin-ltd/FaceRecognition-Javascript/assets/160750757/657130a9-50f2-486d-b6d5-b78bcec5e6e2.png" width=200/>
 </div>
 
-#  Liveness Detection SDK Linux - Fully On-Premise - iBeta Level2 Compliant
+#  Liveness Detection SDK Linux - Fully On-Premise - iBeta Level 2 Compliant
 ## Overview
 Explore our iBeta level 2 compliant `liveness detection linux SDK` that effectively safeguards against **printed photos, video replay, 3D masks, and deepfake threats**, ensuring top-tier security.
 <br>This is `on-premise SDK` which means everything is processed in your server and **NO** data leaves the device 
