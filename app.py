@@ -32,6 +32,18 @@ maxFaceCount = 10
 
 app = Flask(__name__)
 
+is_activated = False
+
+if os.path.exists("license.txt"):
+    
+    with open("license.txt", 'r') as file:
+        license = file.read()
+    
+    ret = setActivation(license.encode('utf-8'))
+    ret = initSDK("data".encode('utf-8'))
+
+    is_activated = True
+
 
 @app.route('/get-machine-code', methods=['GET'])
 def get_machine_code():
