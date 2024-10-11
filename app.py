@@ -35,7 +35,7 @@ app = Flask(__name__)
 is_activated = False
 
 if os.path.exists("license.txt"):
-    
+
     with open("license.txt", 'r') as file:
         license = file.read()
     
@@ -64,6 +64,9 @@ def activate_machine():
     ret = setActivation(license.encode('utf-8'))
     activate_state = ret
     print("activation: ", ret)
+    if ret == 0:
+        with open("license.txt", 'w') as file:
+            file.write(license)
 
     ret = initSDK("data".encode('utf-8'))
     init_state = ret
