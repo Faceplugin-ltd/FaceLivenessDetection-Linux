@@ -4,7 +4,7 @@ from ctypes import *
 from numpy.ctypeslib import ndpointer
 from face_util import FaceBox
 
-libPath = os.path.abspath(os.path.dirname(__file__)) + '/libfacesdk1.so'
+libPath = os.path.abspath(os.path.dirname(__file__)) + '/faceplugin.so'
 facesdk = cdll.LoadLibrary(libPath)
 
 getMachineCode = facesdk.getMachineCode

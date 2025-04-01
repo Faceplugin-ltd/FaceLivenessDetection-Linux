@@ -1,7 +1,7 @@
 FROM openvino/ubuntu20_runtime:2022.3.0
 RUN mkdir -p /home/openvino/faceplugin-live
 WORKDIR /home/openvino/faceplugin-live
-COPY ./libfacesdk1.so .
+COPY ./faceplugin.so .
 COPY ./facesdk.py .
 COPY face_util.py .
 COPY ./app.py .
