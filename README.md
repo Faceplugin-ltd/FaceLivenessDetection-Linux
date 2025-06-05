@@ -19,14 +19,9 @@ Explore our iBeta level 2 compliant `liveness detection linux SDK` that effectiv
 </div>
 
 ## Installation
-- build docker image
 ```bash
-sudo docker build -t face-liveness --progress=plain .
-```
-
-- run docker image
-```bash
-sudo docker run --name faceplugin -d -p 0.0.0.0:8888:8888 face-liveness
+sudo docker pull faceplugin/face-anti-spoofing:20250605
+sudo docker run -d -p 0.0.0.0:8888:8888 faceplugin/face-anti-spoofing:20250605
 ```
 
 ## How to run
