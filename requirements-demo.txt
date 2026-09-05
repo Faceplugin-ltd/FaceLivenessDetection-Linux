@@ -1,0 +1,4 @@
+# Local Gradio test UI only (not used by Docker image).
+-r requirements.txt
+requests>=2.31.0
+gradio>=4.0

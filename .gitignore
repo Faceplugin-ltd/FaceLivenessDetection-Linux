@@ -1,0 +1,42 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+
+# Runtime (Google Drive → lib/cpu or lib/gpu). Empty dirs on GitHub.
+lib/cpu/*
+!lib/cpu/.gitkeep
+lib/gpu/*
+!lib/gpu/.gitkeep
+!lib/**/README.md
+lib/**/*.so
+lib/**/*.fpk
+
+# Vendor source drop leftovers
+weights/
+config.ini
+libUtils.so
+libFaceSDK.so
+libSecure.so
+
+# Local license
+activation.dat
+license.dat
+license.txt
+license.txt.example
+license.lic
+FP1.*
+*.fp1
+workdir/
+
+# Kit-only
+deploy.py
+upload-library.py
+upload_library.py
+lib_drive.yaml
+
+# IDE
+.idea/
+.vscode/
+*.iml

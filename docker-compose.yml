@@ -1,0 +1,20 @@
+services:
+  sdk:
+    container_name: faceplugin-face-liveness
+    build: .
+    image: faceplugin/face-liveness:local
+    platform: linux/amd64
+    privileged: true
+    shm_size: "1gb"
+    ports:
+      - "8084:8084"
+    environment:
+      PORT: "8084"
+      LICENSE: /root/facesdk/license.txt
+    volumes:
+      # Optional license file (paste FP1. key when you have one).
+      - ./license.txt:/root/facesdk/license.txt
+      # Linux hosts: keep this for a stable Docker machine code.
+      # Docker Desktop (macOS/Windows): remove the next line (no host /etc/machine-id).
+      - /etc/machine-id:/etc/machine-id:ro
+    restart: unless-stopped

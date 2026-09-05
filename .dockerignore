@@ -1,0 +1,24 @@
+.git
+.gitignore
+__pycache__
+*.pyc
+*.pyo
+.venv
+venv
+.env
+*.md
+!lib/README.md
+postman
+LICENSE
+license.txt
+license.txt.example
+license.dat
+build_docker.sh
+docker-compose*.yml
+# Local demo UI only — not part of the SDK/API image
+demo.py
+requirements-demo.txt
+assets/
+examples/
+gradio/
+deploy.py
